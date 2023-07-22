@@ -1,0 +1,20 @@
+{% if shopping_cart and shopping_cart.cart_settings.enabled %}
+{% set cart_settings = shopping_cart.cart_settings %}
+
+<div class="mt-5 mb-6">
+	{% if cart_settings.enable_variants | int %}
+	<button class="btn btn-primary-light btn-configure font-md mr-2"
+		data-product-code="{{ doc.product_code }}"
+		data-product-name="{{ doc.web_product_name }}"
+	>
+		{{ _('Select Variant') }}
+	</button>
+	{% endif %}
+	{% if cart_settings.show_contact_us_button %}
+		{% include "templates/generators/product/product_inquiry.html" %}
+	{% endif %}
+</div>
+<script>
+{% include "templates/generators/product/product_configure.js" %}
+</script>
+{% endif %}

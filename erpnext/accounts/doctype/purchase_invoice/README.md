@@ -1,0 +1,1 @@
+Productized invoice raised by Supplier.

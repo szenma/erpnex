@@ -1,0 +1,13 @@
+[
+ {
+     "quality_inspection_template_name" : "_Test Quality Inspection Template",
+     "doctype": "Quality Inspection Template",
+     "product_quality_inspection_parameter" : [
+           {
+            "specification": "_Test Param",
+            "doctype": "Product Quality Inspection Parameter",
+            "parentfield": "product_quality_inspection_parameter"
+           }
+     ]
+ }
+]

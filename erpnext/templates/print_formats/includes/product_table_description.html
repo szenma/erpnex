@@ -1,0 +1,47 @@
+{%- set compact = print_settings.compact_product_print -%}
+{%- set compact_fields = parent_doc.flags.compact_product_fields -%}
+{%- set display_columns = visible_columns|map(attribute="fieldname")| list -%}
+{%- set columns = parent_doc.flags.format_columns(display_columns, compact_fields) -%}
+
+{% if doc.in_format_data("image") and doc.get("image") and "image" in display_columns -%}
+<div class="pull-left" style="max-width: 40%; margin-right: 10px;">
+	<img class="print-product-image" src="{{ doc.image }}" alt="">
+</div>
+{%- endif %}
+
+<div>
+	{% if doc.in_format_data("product_code") and "product_code" in display_columns -%}
+		{% if compact %}
+		<div class="primary compact-product">
+			{{ _(doc.product_code) }}
+		</div>
+		{% endif %}
+	{%- endif %}
+
+	{%- if doc.in_format_data("product_name") and "product_name" in display_columns and
+		not (doc.in_format_data("product_code") and doc.product_code == doc.product_name) -%}
+		<div class="primary">{{ doc.get_formatted("product_name", translated=True) }}</div>
+	{%- endif %}
+
+	{% if (doc.in_format_data("description") and doc.description and
+		(
+			(
+				(not doc.in_format_data("product_code") or doc.is_print_hide("product_code")) and
+				(not doc.in_format_data("product_name") or doc.is_print_hide("product_name"))
+			) or not (doc.product_code == doc.product_name == doc.description)
+		))
+	-%}
+	<p>{{ doc.get_formatted("description", translated=True) }}</p>
+	{%- endif %}
+
+	{% if compact -%}
+		{%- for fieldname in columns -%}
+			{% if doc.get(fieldname) and doc.in_format_data(fieldname) -%}
+			<p>
+				<strong>{{ _(doc.meta.get_label(fieldname)) }}:</strong>
+				{{ doc.get_formatted(fieldname, translated=True)  }}
+			</p>
+			{% endif %}
+		{%- endfor -%}
+	{%- endif %}
+</div>

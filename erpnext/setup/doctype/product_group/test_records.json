@@ -1,0 +1,108 @@
+[
+ {
+  "doctype": "Product Group",
+  "is_group": 0,
+  "product_group_name": "_Test Product Group",
+  "parent_product_group": "All Product Groups",
+  "product_group_defaults": [{
+		"company": "_Test Company",
+		"buying_cost_center": "_Test Cost Center 2 - _TC",
+		"selling_cost_center": "_Test Cost Center 2 - _TC",
+		"default_warehouse": "_Test Warehouse - _TC"
+	}]
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 0,
+  "product_group_name": "_Test Product Group Desktops",
+  "parent_product_group": "All Product Groups"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group A",
+  "parent_product_group": "All Product Groups"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group B",
+  "parent_product_group": "All Product Groups"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group B - 1",
+  "parent_product_group": "_Test Product Group B"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group B - 2",
+  "parent_product_group": "_Test Product Group B"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 0,
+  "product_group_name": "_Test Product Group B - 3",
+  "parent_product_group": "_Test Product Group B"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group C",
+  "parent_product_group": "All Product Groups"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group C - 1",
+  "parent_product_group": "_Test Product Group C"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group C - 2",
+  "parent_product_group": "_Test Product Group C"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group D",
+  "parent_product_group": "All Product Groups"
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 1,
+  "product_group_name": "_Test Product Group Tax Parent",
+  "parent_product_group": "All Product Groups",
+  "taxes": [
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 10 - _TC",
+    "tax_category": ""
+   },
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 12 - _TC",
+    "tax_category": "_Test Tax Category 1"
+   }
+  ]
+ },
+ {
+  "doctype": "Product Group",
+  "is_group": 0,
+  "product_group_name": "_Test Product Group Tax Child Override",
+  "parent_product_group": "_Test Product Group Tax Parent",
+  "taxes": [
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 15 - _TC",
+    "tax_category": ""
+   }
+  ]
+ }
+]

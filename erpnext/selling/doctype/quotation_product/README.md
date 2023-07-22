@@ -1,0 +1,1 @@
+Product details (qty, rate) in parent Quotation.

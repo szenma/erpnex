@@ -1,0 +1,1 @@
+Product detail in parent Purchase Invoice.

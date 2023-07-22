@@ -1,0 +1,37 @@
+{% from "erpnext/templates/includes/macros.html" import product_card, product_card_body %}
+
+<div class="section-with-cards product-card-group-section">
+	<div class="product-group-header d-flex justify-content-between">
+		<div class="title-section">
+			{%- if title -%}
+			<h2 class="section-title">{{ title }}</h2>
+			{%- endif -%}
+			{%- if subtitle -%}
+			<p class="section-description">{{ subtitle }}</p>
+			{%- endif -%}
+		</div>
+		<div class="primary-action-section">
+			{%- if primary_action -%}
+			<a href="{{ action }}" class="btn btn-primary pull-right">
+				{{ primary_action_label }}
+			</a>
+			{%- endif -%}
+		</div>
+	</div>
+
+	<div class="row">
+		{%- for index in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] -%}
+		{%- set product = values['card_' + index + '_product'] -%}
+			{%- if product -%}
+				{%- set web_product = frappe.get_doc("Website Product", product) -%}
+				{{ product_card(
+					web_product, is_featured=values['card_' + index + '_featured'],
+					is_full_width=True, align="Center"
+				) }}
+			{%- endif -%}
+		{%- endfor -%}
+	</div>
+</div>
+
+<style>
+</style>

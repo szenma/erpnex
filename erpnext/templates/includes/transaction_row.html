@@ -1,0 +1,25 @@
+<div class="web-list-product transaction-list-product">
+	<div class="row align-products-center">
+		<div class="col-sm-4">
+			<span class="list-product-name font-weight-bold">{{ doc.name }}</span>
+			<div class="small text-muted transaction-time"
+				title="{{ frappe.utils.format_datetime(doc.modified, "medium") }}">
+				{{ frappe.utils.global_date_format(doc.modified) }}
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<span class="indicator-pill {{ doc.indicator_color or ("blue" if doc.docstatus==1 else "gray") }} list-product-status">{{doc.status}}</span>
+		</div>
+		<div class="col-sm-2">
+			<div class="small text-muted products-preview ellipsis ellipsis-width">
+				{{ doc.products_preview }}
+			</div>
+		</div>
+		{% if doc.get('grand_total') %}
+			<div class="col-sm-3 text-right font-weight-bold product-total">
+				{{ doc.get_formatted("grand_total") }}
+			</div>
+		{% endif %}
+	</div>
+	<a class="transaction-product-link" href="/{{ pathname }}/{{ doc.name }}">Link</a>
+</div>

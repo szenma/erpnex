@@ -1,0 +1,57 @@
+[
+ {
+  "company": "_Test Company", 
+  "doctype": "Material Request", 
+  "fiscal_year": "_Test Fiscal Year 2013", 
+  "products": [
+   {
+    "description": "_Test Product Home Desktop 100", 
+    "doctype": "Material Request Product", 
+    "product_code": "_Test Product Home Desktop 100", 
+    "product_name": "_Test Product Home Desktop 100", 
+    "parentfield": "products", 
+    "qty": 54.0, 
+    "schedule_date": "2013-02-18", 
+    "uom": "_Test UOM 1", 
+    "warehouse": "_Test Warehouse - _TC"
+   }, 
+   {
+    "description": "_Test Product Home Desktop 200", 
+    "doctype": "Material Request Product", 
+    "product_code": "_Test Product Home Desktop 200", 
+    "product_name": "_Test Product Home Desktop 200", 
+    "parentfield": "products", 
+    "qty": 3.0, 
+    "schedule_date": "2013-02-19", 
+    "uom": "_Test UOM 1", 
+    "warehouse": "_Test Warehouse - _TC"
+   }
+  ], 
+  "material_request_type": "Purchase", 
+  "naming_series": "_T-Material Request-", 
+  "transaction_date": "2013-02-18",
+  "schedule_date": "2013-02-19"
+ },
+ {
+  "company": "_Test Company", 
+  "doctype": "Material Request", 
+  "fiscal_year": "_Test Fiscal Year 2013", 
+  "products": [
+   {
+    "description": "_Test FG Product", 
+    "doctype": "Material Request Product", 
+    "product_code": "_Test FG Product", 
+    "product_name": "_Test FG Product", 
+    "parentfield": "products", 
+    "qty": 5, 
+    "schedule_date": "2013-02-19",
+    "uom": "_Test UOM 1", 
+    "warehouse": "_Test Warehouse - _TC"
+   }
+  ], 
+  "material_request_type": "Manufacture", 
+  "naming_series": "_T-Material Request-", 
+  "transaction_date": "2013-02-18",
+  "schedule_date": "2013-02-19"
+ }
+]

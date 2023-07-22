@@ -1,0 +1,131 @@
+{
+    "actions": [],
+    "autoname": "hash",
+    "creation": "2022-04-01 19:23:05.728354",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "product_code",
+        "column_break_2",
+        "product_name",
+        "section_break_4",
+        "qty",
+        "column_break_6",
+        "rate",
+        "column_break_8",
+        "amount",
+        "section_break_10",
+        "fg_product",
+        "column_break_12",
+        "fg_product_qty"
+    ],
+    "fields": [
+        {
+            "bold": 1,
+            "columns": 2,
+            "fieldname": "product_code",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "label": "Product Code",
+            "options": "Product",
+            "reqd": 1,
+            "search_index": 1
+        },
+        {
+            "fetch_from": "product_code.product_name",
+            "fieldname": "product_name",
+            "fieldtype": "Data",
+            "in_global_search": 1,
+            "in_list_view": 1,
+            "label": "Product Name",
+            "print_hide": 1,
+            "reqd": 1
+        },
+        {
+            "bold": 1,
+            "columns": 1,
+            "fieldname": "qty",
+            "fieldtype": "Float",
+            "in_list_view": 1,
+            "label": "Quantity",
+            "print_width": "60px",
+            "reqd": 1,
+            "width": "60px"
+        },
+        {
+            "bold": 1,
+            "columns": 2,
+            "fetch_from": "product_code.standard_rate",
+            "fetch_if_empty": 1,
+            "fieldname": "rate",
+            "fieldtype": "Currency",
+            "in_list_view": 1,
+            "label": "Rate",
+            "options": "currency",
+            "reqd": 1
+        },
+        {
+            "columns": 2,
+            "fieldname": "amount",
+            "fieldtype": "Currency",
+            "in_list_view": 1,
+            "label": "Amount",
+            "options": "currency",
+            "read_only": 1,
+            "reqd": 1
+        },
+        {
+            "fieldname": "fg_product",
+            "fieldtype": "Link",
+            "label": "Finished Good Product",
+            "options": "Product",
+            "reqd": 1
+        },
+        {
+            "default": "1",
+            "fieldname": "fg_product_qty",
+            "fieldtype": "Float",
+            "label": "Finished Good Product Quantity",
+            "reqd": 1
+        },
+        {
+            "fieldname": "column_break_2",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "section_break_4",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "column_break_6",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "column_break_8",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "section_break_10",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "column_break_12",
+            "fieldtype": "Column Break"
+        }
+    ],
+    "istable": 1,
+    "links": [],
+    "modified": "2022-04-07 11:43:43.094867",
+    "modified_by": "Administrator",
+    "module": "Subcontracting",
+    "name": "Subcontracting Order Service Product",
+    "naming_rule": "Random",
+    "owner": "Administrator",
+    "permissions": [],
+    "quick_entry": 1,
+    "search_fields": "product_name",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

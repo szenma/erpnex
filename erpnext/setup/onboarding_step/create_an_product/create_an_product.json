@@ -1,0 +1,23 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create a new Product",
+ "creation": "2021-05-17 13:47:18.515052",
+ "description": "# Create an Product\n\nProduct is a product, of a or service offered by your company, or something you buy as a part of your supplies or raw materials.\n\nProducts are integral to everything you do in ERPNext - from billing, purchasing to managing inventory. Everything you buy or sell, whether it is a physical product or a service is an Product. Products can be stock, non-stock, variants, serialized, batched, assets etc.\n",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "form_tour": "Product General",
+ "idx": 1,
+ "intro_video_url": "",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2023-05-23 12:43:08.484206",
+ "modified_by": "Administrator",
+ "name": "Create an Product",
+ "owner": "Administrator",
+ "reference_document": "Product",
+ "show_form_tour": 1,
+ "show_full_form": 0,
+ "title": "Create an Product",
+ "validate_action": 1
+}

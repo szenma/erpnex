@@ -1,0 +1,20 @@
+[
+ {
+  "doctype": "Product Bundle", 
+  "new_product_code": "_Test Product Bundle Product", 
+  "products": [
+   {
+    "doctype": "Product Bundle Product", 
+    "product_code": "_Test Product", 
+    "parentfield": "products", 
+    "qty": 5.0
+   }, 
+   {
+    "doctype": "Product Bundle Product", 
+    "product_code": "_Test Product Home Desktop 100", 
+    "parentfield": "products", 
+    "qty": 2.0
+   }
+  ]
+ }
+]

@@ -1,0 +1,1 @@
+Product Price List master. Price Lists can be defined per Country, Currency.

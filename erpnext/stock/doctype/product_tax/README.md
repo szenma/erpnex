@@ -1,0 +1,1 @@
+Tax rate for this Product against the specified Account.

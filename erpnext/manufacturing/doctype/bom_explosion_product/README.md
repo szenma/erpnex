@@ -1,0 +1,1 @@
+Detail of Product required for the main Product by parsing the entire BOM tree.

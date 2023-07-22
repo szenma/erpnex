@@ -1,0 +1,18 @@
+{% from "erpnext/templates/includes/macros.html" import product_card, product_card_body, product_image_square %}
+<!-- Used in Product Search -->
+<a class="product-link product-list-link" href="{{ route|abs_url }}">
+	<div class='row'>
+		<div class='col-xs-3 col-sm-2 product-image-wrapper'>
+			{{ product_image_square(thumbnail or website_image or image) }}
+		</div>
+		<div class='col-xs-9 col-sm-10 text-left'>
+			<div class="product-text strong">{{ product_name or name }}</div>
+			{% set website_description = website_description or description %}
+			{% if website_description != product_name %}
+				<div class="text-muted">{{ website_description or description }}</div>
+			{% elif product_code and product_code != product_name %}
+				<div class="text-muted">{{ _('Product Code') }}: {{ product_code }}</div>
+			{% endif %}
+		</div>
+	</div>
+</a>

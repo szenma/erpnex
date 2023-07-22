@@ -1,0 +1,1 @@
+Product-codes used by Customers for the parent Product.

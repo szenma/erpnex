@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "creation": "2019-07-11 16:01:22.832885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_code",
+  "product_name",
+  "column_break_2",
+  "description",
+  "product_group",
+  "section_break_5",
+  "warehouse",
+  "quantity_section",
+  "qty",
+  "stock_qty",
+  "picked_qty",
+  "column_break_11",
+  "uom",
+  "conversion_factor",
+  "stock_uom",
+  "serial_no_and_batch_section",
+  "serial_no",
+  "column_break_20",
+  "batch_no",
+  "column_break_15",
+  "sales_order",
+  "sales_order_product",
+  "product_bundle_product",
+  "material_request",
+  "material_request_product"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "picked_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Picked Qty"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "product_code.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "product_code.description",
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "depends_on": "serial_no",
+   "fieldname": "serial_no",
+   "fieldtype": "Small Text",
+   "label": "Serial No"
+  },
+  {
+   "depends_on": "batch_no",
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "UOM Conversion Factor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Stock Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Product",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_order_product",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sales Order Product",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "serial_no_and_batch_section",
+   "fieldtype": "Section Break",
+   "label": "Serial No and Batch"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_request",
+   "fieldtype": "Link",
+   "label": "Material Request",
+   "options": "Material Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "material_request_product",
+   "fieldtype": "Data",
+   "label": "Material Request Product",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "product_code.product_group",
+   "fieldname": "product_group",
+   "fieldtype": "Data",
+   "label": "Product Group",
+   "read_only": 1
+  },
+  {
+   "description": "product bundle product row's name in sales order. Also indicates that picked product is to be used for a product bundle",
+   "fieldname": "product_bundle_product",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Product Bundle Product",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-16 14:05:51.719959",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Pick List Product",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

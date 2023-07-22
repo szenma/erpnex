@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "creation": "2021-07-12 20:52:12.503470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "website_product",
+  "website_product_name",
+  "column_break_2",
+  "product_code",
+  "more_information_section",
+  "route",
+  "column_break_6",
+  "website_product_image",
+  "website_product_thumbnail"
+ ],
+ "fields": [
+  {
+   "fieldname": "website_product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Website Product",
+   "options": "Website Product"
+  },
+  {
+   "fetch_from": "website_product.web_product_name",
+   "fieldname": "website_product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Website Product Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fetch_from": "website_product.route",
+   "fieldname": "route",
+   "fieldtype": "Small Text",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "website_product.website_image",
+   "fieldname": "website_product_image",
+   "fieldtype": "Attach",
+   "label": "Website Product Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "website_product.thumbnail",
+   "fieldname": "website_product_thumbnail",
+   "fieldtype": "Data",
+   "label": "Website Product Thumbnail",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "website_product.product_code",
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-06-28 16:44:24.718728",
+ "modified_by": "Administrator",
+ "module": "E-commerce",
+ "name": "Recommended Products",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

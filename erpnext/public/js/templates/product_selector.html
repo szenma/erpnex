@@ -1,0 +1,37 @@
+<div class="app-listing product-list image-view-container product-selector">
+{% for (var i=0; i < data.length; i++) { var product = data[i]; %}
+	{% if (i % 4 === 0) { %}<div class="image-view-row">{% } %}
+	<div class="image-view-product" data-name="{{ product.name }}">
+		<div class="image-view-header doclist-row">
+			<div class="list-value">
+				<a class="grey list-id" data-name="{{product.name}}"
+					title="{{ product.product_name || product.name}}">
+					{{product.product_name || product.name}}</a>
+			</div>
+		</div>
+		<div class="image-view-body">
+			<a  data-product-code="{{ product.name }}"
+				title="{{ product.product_name || product.name }}"
+			>
+				<div class="image-field"
+					style="
+					{% if (!product.image) { %}
+						background-color: #fafbfc;
+					{% } %}
+					border: 0px;"
+				>
+					{% if (!product.image) { %}
+					<span class="placeholder-text">
+						{%= frappe.get_abbr(product.product_name || product.name) %}
+					</span>
+					{% } %}
+					{% if (product.image) { %}
+					<img src="{{ product.image }}" alt="{{product.product_name || product.name}}">
+					{% } %}
+				</div>
+			</a>
+		</div>
+	</div>
+	{% if ((i % 4 === 3) || (i===data.length - 1)) { %}</div>{% } %}
+{% endfor %}
+</div>

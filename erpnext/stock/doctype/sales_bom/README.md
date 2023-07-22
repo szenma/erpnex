@@ -1,0 +1,1 @@
+Grouping of Products for sale. This is use where inventory is not maintained for the main Product but only the child Products.

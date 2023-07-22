@@ -1,0 +1,192 @@
+[
+ {
+  "products": [
+   {
+    "amount": 5000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Serialized Product With Series",
+    "parentfield": "products",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   },
+   {
+    "amount": 2000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product 2",
+    "parentfield": "products",
+    "qty": 2.0,
+    "rate": 1000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   }
+  ],
+  "docstatus": 1,
+  "doctype": "BOM",
+  "currency": "USD",
+  "is_active": 1,
+  "is_default": 1,
+  "product": "_Test Product Home Desktop Manufactured",
+  "company": "_Test Company",
+  "quantity": 1.0
+ },
+ {
+  "scrap_products":[
+  {
+   "amount": 2000.0,
+   "doctype": "BOM Scrap Product",
+   "product_code": "_Test Product Home Desktop 100",
+   "parentfield": "scrap_products",
+   "stock_qty": 1.0,
+   "rate": 2000.0,
+   "stock_uom": "_Test UOM"
+  }
+  ],
+  "products": [
+   {
+    "amount": 10000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product",
+    "parentfield": "products",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   },
+   {
+    "amount": 2000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product Home Desktop 100",
+    "parentfield": "products",
+    "qty": 2.0,
+    "rate": 1000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   }
+  ],
+  "docstatus": 1,
+  "doctype": "BOM",
+  "is_active": 1,
+  "is_default": 1,
+  "currency": "USD",
+  "product": "_Test FG Product",
+  "quantity": 1.0
+ },
+ {
+  "operations": [
+   {
+    "operation": "_Test Operation 1",
+    "description": "_Test",
+    "workstation": "_Test Workstation 1",
+    "hour_rate": 100,
+    "time_in_mins": 60,
+    "operating_cost": 100
+   }
+   ],
+  "products": [
+   {
+    "amount": 5000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product",
+    "parentfield": "products",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   },
+   {
+    "amount": 3000.0,
+    "bom_no": "BOM-_Test Product Home Desktop Manufactured-001",
+    "doctype": "BOM Product",
+    "product_code": "_Test Product Home Desktop Manufactured",
+    "parentfield": "products",
+    "qty": 3.0,
+    "rate": 1000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   }
+  ],
+  "docstatus": 1,
+  "doctype": "BOM",
+  "is_active": 1,
+  "is_default": 1,
+  "currency": "USD",
+  "conversion_rate": 60,
+  "company": "_Test Company",
+  "product": "_Test FG Product 2",
+  "quantity": 1.0,
+  "with_operations": 1
+ },
+ {
+  "operations": [
+   {
+    "operation": "_Test Operation 1",
+    "description": "_Test",
+    "workstation": "_Test Workstation 1",
+    "time_in_mins": 60,
+    "operating_cost": 140
+   }
+   ],
+  "products": [
+   {
+    "amount": 5000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product",
+    "parentfield": "products",
+    "qty": 2.0,
+    "rate": 3000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   }
+  ],
+  "docstatus": 1,
+  "doctype": "BOM",
+  "is_active": 1,
+  "is_default": 1,
+  "currency": "USD",
+  "product": "_Test Variant Product",
+  "quantity": 1.0,
+  "with_operations": 1
+ },
+ {
+  "products": [
+   {
+    "amount": 5000.0,
+    "doctype": "BOM Product",
+    "product_code": "_Test Product",
+    "parentfield": "products",
+    "qty": 2.0,
+    "rate": 3000.0,
+    "uom": "_Test UOM",
+    "stock_uom": "_Test UOM",
+    "source_warehouse": "_Test Warehouse - _TC",
+    "include_product_in_manufacturing": 1
+   }
+  ],
+  "docstatus": 1,
+  "doctype": "BOM",
+  "is_active": 1,
+  "is_default": 1,
+  "currency": "USD",
+  "product": "_Test Variant Product",
+  "quantity": 1.0,
+  "with_operations": 0,
+  "fg_based_operating_cost": 1,
+  "operating_cost_per_bom_quantity": 140
+ }
+]

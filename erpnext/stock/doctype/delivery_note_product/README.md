@@ -1,0 +1,1 @@
+Product shipped in parent Delivery Note.

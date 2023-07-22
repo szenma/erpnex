@@ -1,0 +1,1 @@
+Product master. Also called SKU (stock keeping unit).

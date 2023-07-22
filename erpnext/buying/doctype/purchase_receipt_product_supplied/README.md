@@ -1,0 +1,1 @@
+Details of Products supplied when receiving purchases via Purchase Receipt.

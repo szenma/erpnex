@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create an Product",
+ "creation": "2020-05-05 16:42:31.476275",
+ "description": "# Create Products for Bill of Materials\n\nOne of the prerequisites of a BOM is the creation of raw materials, sub-assembly, and finished products. Once these products are created, you will be able to proceed to the Bill of Materials master, which is composed of products and routing.\n",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2021-08-13 16:00:22.407811",
+ "modified_by": "Administrator",
+ "name": "Create Product",
+ "owner": "Administrator",
+ "reference_document": "Product",
+ "show_form_tour": 1,
+ "show_full_form": 1,
+ "title": "Finished Products",
+ "validate_action": 1
+}

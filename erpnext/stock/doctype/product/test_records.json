@@ -1,0 +1,450 @@
+[
+ {
+  "description": "_Test Product 1",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product",
+  "product_group": "_Test Product Group",
+  "product_name": "_Test Product",
+  "apply_warehouse_wise_reorder_level": 1,
+  "opening_stock": 10,
+  "valuation_rate": 100,
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "reorder_levels": [
+   {
+    "material_request_type": "Purchase",
+    "warehouse": "_Test Warehouse - _TC",
+    "warehouse_reorder_level": 20,
+    "warehouse_reorder_qty": 20
+   }
+  ],
+  "uoms": [
+    {
+      "uom": "_Test UOM",
+      "conversion_factor": 1.0
+    },
+    {
+      "uom": "_Test UOM 1",
+      "conversion_factor": 10.0
+    }
+  ],
+  "stock_uom": "_Test UOM"
+ },
+ {
+  "description": "_Test Product 2",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product 2",
+  "product_group": "_Test Product Group",
+  "product_name": "_Test Product 2",
+  "stock_uom": "_Test UOM",
+  "opening_stock": 10,
+  "valuation_rate": 100,
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Product Home Desktop 100 3",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Home Desktop 100",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Product Home Desktop 100",
+  "valuation_rate": 100,
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "taxes": [
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 10 - _TC"
+   }
+  ],
+  "stock_uom": "_Test UOM 1"
+ },
+ {
+  "description": "_Test Product Home Desktop 200 4",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Home Desktop 200",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Product Home Desktop 200",
+  "stock_uom": "_Test UOM 1",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Product Bundle Product 5",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 0,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Bundle Product",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Product Bundle Product",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test FG Product 6",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 1,
+  "product_code": "_Test FG Product",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test FG Product",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Non Stock Product 7",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 0,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Non Stock Product",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Non Stock Product",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Serialized Product 8",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 1,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Serialized Product",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Serialized Product",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Serialized Product 9",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 1,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Serialized Product With Series",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Serialized Product With Series",
+  "serial_no_series": "ABCD.#####",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Product Home Desktop Manufactured 10",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Home Desktop Manufactured",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Product Home Desktop Manufactured",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test FG Product 2 11",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 1,
+  "product_code": "_Test FG Product 2",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test FG Product 2",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Variant Product 12",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 1,
+  "product_code": "_Test Variant Product",
+  "product_group": "_Test Product Group Desktops",
+  "product_name": "_Test Variant Product",
+  "stock_uom": "_Test UOM",
+  "has_variants": 1,
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "attributes": [
+	  {
+	  	"attribute": "Test Size"
+	  }
+  ],
+  "apply_warehouse_wise_reorder_level": 1,
+  "reorder_levels": [
+      {
+       "material_request_type": "Purchase",
+       "warehouse": "_Test Warehouse - _TC",
+       "warehouse_reorder_level": 20,
+       "warehouse_reorder_qty": 20
+      }
+  ]
+ },
+ {
+  "description": "_Test Product 1",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Warehouse Group Wise Reorder",
+  "product_group": "_Test Product Group",
+  "product_name": "_Test Product Warehouse Group Wise Reorder",
+  "apply_warehouse_wise_reorder_level": 1,
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse Group-C1 - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "reorder_levels": [
+   {
+	"warehouse_group": "_Test Warehouse Group - _TC",
+    "material_request_type": "Purchase",
+    "warehouse": "_Test Warehouse Group-C1 - _TC",
+    "warehouse_reorder_level": 20,
+    "warehouse_reorder_qty": 20
+   }
+  ],
+  "stock_uom": "_Test UOM"
+ },
+ {
+  "description": "_Test Product With Product Tax Template",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product With Product Tax Template",
+  "product_group": "_Test Product Group",
+  "product_name": "_Test Product With Product Tax Template",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "taxes": [
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 10 - _TC"
+   },
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 12 - _TC",
+    "tax_category": "_Test Tax Category 1"
+   }
+  ]
+ },
+ {
+  "description": "_Test Product Inherit Group Product Tax Template 1",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Inherit Group Product Tax Template 1",
+  "product_group": "_Test Product Group Tax Parent",
+  "product_name": "_Test Product Inherit Group Product Tax Template 1",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Product Inherit Group Product Tax Template 2",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Inherit Group Product Tax Template 2",
+  "product_group": "_Test Product Group Tax Child Override",
+  "product_name": "_Test Product Inherit Group Product Tax Template 2",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }]
+ },
+ {
+  "description": "_Test Product Override Group Product Tax Template",
+  "doctype": "Product",
+  "has_batch_no": 0,
+  "has_serial_no": 0,
+  "inspection_required": 0,
+  "is_stock_product": 1,
+  "is_sub_contracted_product": 0,
+  "product_code": "_Test Product Override Group Product Tax Template",
+  "product_group": "_Test Product Group Tax Child Override",
+  "product_name": "_Test Product Override Group Product Tax Template",
+  "stock_uom": "_Test UOM",
+  "product_defaults": [{
+    "company": "_Test Company",
+    "default_warehouse": "_Test Warehouse - _TC",
+    "expense_account": "_Test Account Cost for Goods Sold - _TC",
+    "buying_cost_center": "_Test Cost Center - _TC",
+    "selling_cost_center": "_Test Cost Center - _TC",
+    "income_account": "Sales - _TC"
+  }],
+  "taxes": [
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "product_tax_template": "_Test Account Excise Duty @ 20 - _TC"
+   },
+   {
+    "doctype": "Product Tax",
+    "parentfield": "taxes",
+    "tax_category": "_Test Tax Category 1",
+    "product_tax_template": "_Test Product Tax Template 1 - _TC"
+   }
+  ]
+ },
+ {
+  "description": "_Test",
+  "doctype": "Product",
+  "is_stock_product": 1,
+  "product_code": "138-CMS Shoe",
+  "product_group": "_Test Product Group",
+  "product_name": "138-CMS Shoe",
+  "stock_uom": "_Test UOM"
+ }
+]

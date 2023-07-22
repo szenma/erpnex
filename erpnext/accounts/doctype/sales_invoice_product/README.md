@@ -1,0 +1,1 @@
+Product details of parent Sales Invoice.

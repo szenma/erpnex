@@ -1,0 +1,1 @@
+Price of the Product in a particular Price List.

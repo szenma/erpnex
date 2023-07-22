@@ -1,0 +1,1 @@
+Location (physical or virtual) where Products can be stored.
